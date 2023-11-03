@@ -1,55 +1,63 @@
+body {
+  background-color: rgb(85, 85, 85);
+}
+
 .jumbotron {
   padding-top: 2rem;
-  background-color: blueviolet;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: rgb(241, 239, 239);
+  padding-bottom: 2rem;
+  margin: 0.5%;
+}
+
+#aboutme {
+  padding-top: 2rem;
+  background-color: rgb(252, 234, 234);
+  padding-bottom: 2rem;
+  margin: 0.5%;
 }
 
 #about {
-  background-color: #0099ff;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
-}
-
-#projects {
   padding-top: 2rem;
-  background-color: blueviolet;
-  background-image: linear-gradient(0deg, #3eecac 0%, #ee74e1 100%);
+  background-color: rgb(241, 239, 239);
+  padding-bottom: 2rem;
+  margin: 0.5%;
 }
 
 #inquiry {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: blueviolet;
-  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-color: rgb(182, 225, 245);
+  margin: 0.5%;
 }
 
-#the-count {
-  float: right;
-  padding: 0.1rem 0 0 0;
-  font-size: 0.875rem;
+.btn.button {
+  border: 3px solid black;
+  border-radius: 24px;
 }
 
-.btn-close {
-  right: 0%;
+.btn.button:hover,
+.btn.button.active {
+  border: 3px solid black;
+  background-color: black;
+  color: white;
 }
 
-.close-button {
-  border: none;
-  display: inline-block;
-  padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
+.about::before {
+  content: "About";
 }
 
-.topright {
-  position: absolute;
-  right: 0;
-  top: 12px;
+.about-exp-item {
+  margin-top: 32px;
+}
+
+.about-exp-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-exp-item-detail {
+  display: none;
 }
 
 #footer {
@@ -74,4 +82,38 @@
   .modal-lg {
     width: 900px;
   }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700,300italic);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background: #d0e6ef;
+  color: #666;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+h1 {
+  color: #555;
+  margin: 3rem 0 1rem 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+#the-count {
+  float: right;
+  padding: 0.1rem 0 0 0;
+  font-size: 0.875rem;
 }
